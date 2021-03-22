@@ -28,7 +28,7 @@ public class ProdutoController {
 	@Autowired
 	private ProdutoRepository produtoRepository;
 	
-	@GetMapping("/produtos")
+	@GetMapping("/produto")
 	@ApiOperation(value = "Mostra uma lista de produtos")
 	public List<Produto> listarProdutos(){
 		return produtoRepository.findAll();
